@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .quadrado {
+        width: 25%;
+        height: 200px;
+        /* margin: 5px; */
+        background-color: red;
+        float: left;
+    }
+    h1 {
+        margin: auto;
+        line-height: 200px;
+        text-align: center;
+    }
+    .quadrado:nth-of-type(2n) {
+        background-color:green;
+    }
+    .quadrado:nth-of-type(3n) {
+        background-color:teal;
+    }
+    .quadrado:nth-of-type(4n) {
+        background-color: blue;
+    }
+    @media screen and (max-width: 600px) {
+        div {
+            width: 50%;
+        }
+    }
+</style>
+<body>
+    <div>
+        <div class="quadrado">
+            <h1>1</h1>
+        </div>
+        <div class="quadrado">
+            <h1>2</h1>
+        </div>
+        <div class="quadrado">
+            <h1>3</h1>
+        </div>
+        <div class="quadrado">
+            <h1>4</h1>
+        </div>
+    </div>
+</body>
+</html>
